@@ -1,11 +1,13 @@
 import React from 'react'
+import { NavBar } from './components/NavBar/idex'
+import {BrowserRouter as Router} from 'react-router-dom'
 
 
 function App() {
   return (
-    <div className="App">
-      <h1> Rickielive is back!!!!</h1>
-    </div>
+    <Router>
+      <NavBar />
+    </Router>
   );
 }
 
