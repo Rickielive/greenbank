@@ -13,6 +13,10 @@ font-size: 1rem;
 position: sticky;
 top: 0;
 z-index: 10;
+margin: 0px;
+//margin: 0;
+/* width: auto;
+margin-top: 0; */
 
 @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -33,7 +37,7 @@ export const NavLogo = styled(LinkR)`
 color: #fff;
 justify-self: flex-start;
 cursor: pointer;
-font-size: 1.5rem;
+font-size: clamp(2rem, 3vw, 5vw);
 display: flex;
 align-items: center;
 margin-left: 24px;
@@ -76,6 +80,8 @@ height: 80px;
 export const NavLinks = styled(LinkS)`
 color: #fff;
 display: flex;
+font-size: clamp(1.5rem, 2vw, 4vw);
+font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans serif;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
