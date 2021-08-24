@@ -71,8 +71,9 @@ export const SideBarLink = styled(LinkS)`
 display: flex;
 align-items: center;
 justify-content: center;
-font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-font-size: clamp(2rem, 3vw, 5vw);
+/* font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif; */
+/* font-size: clamp(2rem, 3vw, 5vw); */
+font-size: 16px;
 text-decoration: nones;
 list-style: none;
 transition: 0.2s ease-in-out;

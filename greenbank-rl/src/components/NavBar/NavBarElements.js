@@ -80,6 +80,7 @@ height: 80px;
 export const NavLinks = styled(LinkS)`
 color: #fff;
 display: flex;
+font-size: 16px;
 font-size: clamp(1.5rem, 2vw, 4vw);
 font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans serif;
 align-items: center;
@@ -88,7 +89,7 @@ padding: 0 1rem;
 height: 100%;
 cursor: pointer;
 
-&.active{
+&:active{
     border-bottom: 3px solid #01bf71;
 }
 `
@@ -100,6 +101,12 @@ align-items: center;
 @media screen and (max-width: 768px) {
     display: none;
 }
+
+&:hover{
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+    }
 `
 
 export const NavBtnLink = styled(LinkR)`

@@ -3,18 +3,22 @@ import 'animate.css';
 import { SideBarContainer, Icon, CloseIcon, SideBarWrapper, SideBarMenu, SideBarLink, SideBtnWrap, SideBarRoute} from './SideBarElements'
 
 
-const SideBar = () => {
+const SideBar = ({isOpen, toggle}) => {
     return (
-        <SideBarContainer>
-            <Icon>
+        <SideBarContainer isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
                 <CloseIcon />
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink className="animate__animated animate__fadeInRight" to="about">About</SideBarLink>
-                    <SideBarLink className="animate__animated animate__fadeInRight" to="discover">Discover</SideBarLink>
-                    <SideBarLink className="animate__animated animate__fadeInRight" to="services">Services</SideBarLink>
-                    <SideBarLink className="animate__animated animate__fadeInRight" to="signup">Sign Up</SideBarLink>
+                    <SideBarLink className="animate__animated animate__fadeInRight" 
+                    to="about" onClick={toggle}>About</SideBarLink>
+                    <SideBarLink className="animate__animated animate__fadeInRight"
+                    to="discover" onClick={toggle}>Discover</SideBarLink>
+                    <SideBarLink className="animate__animated animate__fadeInRight" 
+                    to="services" onClick={toggle}>Services</SideBarLink>
+                    <SideBarLink className="animate__animated animate__fadeInRight" 
+                    to="signup" onClick={toggle}>Sign Up</SideBarLink>
                 </SideBarMenu>
                 <SideBtnWrap>
                     <SideBarRoute to= '/signin'> Sign In</SideBarRoute>

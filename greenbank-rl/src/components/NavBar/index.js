@@ -3,7 +3,7 @@ import {FaBars} from 'react-icons/fa'
 import { Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks , NavBtn, NavBtnLink} from './NavBarElements'
 
 
-export const NavBar = () => {
+export const NavBar = ({toggle}) => {
     return (
         <React.Fragment>
             <Nav>
@@ -11,7 +11,7 @@ export const NavBar = () => {
 
                 <NavLogo to= '/'> Green Bank</NavLogo>
 
-                <MobileIcon>
+                <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
 
