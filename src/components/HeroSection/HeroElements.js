@@ -11,9 +11,19 @@ align-items: center;
 padding: 0 30px;
 height: 800px;
 position: relative;
-z-index: 10;
+z-index: 1;
 
 /* add : before styles */
+
+:before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    /* background: linear-gradient(180px) */
+}
 `
 
 export const HeroBG = styled.div`

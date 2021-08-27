@@ -25,15 +25,15 @@ position: fixed;
 top: 5%;
 right: 4%;
 padding: .75rem;
-font-size: 2rem;
+font-size: 3rem;
 cursor: pointer;
 outline: none;
 `
 
 export const Icon = styled.div`
 position: absolute;
-/* top: 1.2 rem;
-right: 1.5rem; */
+top: 1.2 rem;
+right: 1.5rem;
 background: transparent;
 outline: none;
 `
@@ -55,7 +55,7 @@ export const SideBarMenu = styled.ul`
 
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: repeat(6, 80px);
+grid-template-rows: repeat(6, 60px);
 text-align: center;
 align-items: center;
 

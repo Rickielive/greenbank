@@ -80,7 +80,7 @@ export const NavLinks = styled(LinkS)`
 color: #fff;
 display: flex;
 font-size: 16px;
-font-size: clamp(1.5rem, 2vw, 4vw);
+font-size: clamp(1.5rem, 1vw, 3vw);
 font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans serif;
 align-items: center;
 text-decoration: none;
@@ -103,7 +103,7 @@ align-items: center;
 
 &:hover{
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    /* background: #fff; */
     color: #010606;
     }
 `
@@ -126,7 +126,7 @@ text-decoration: none;
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
-    }
+     }
 
   
 `
