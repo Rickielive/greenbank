@@ -13,6 +13,10 @@ font-size: 1rem;
 position: sticky;
 top: 0;
 z-index: 10;
+margin: 0px;
+//margin: 0;
+/* width: auto;
+margin-top: 0; */
 
 @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -30,10 +34,10 @@ max-width: 1100px;
 `;
 
 export const NavLogo = styled(LinkR)`
-color: #fff;
+color: #01bf71;
 justify-self: flex-start;
 cursor: pointer;
-font-size: 1.5rem;
+font-size: clamp(2rem, 3vw, 5vw);
 display: flex;
 align-items: center;
 margin-left: 24px;
@@ -62,8 +66,7 @@ list-style: none;
 text-align: center;
 margin-right: -22px;
 
-/* @media screen and(max-width: 768px) {
-    display: none !important; */
+
     @media screen and (max-width: 768px) {
     display: none !important;
 }
@@ -76,13 +79,16 @@ height: 80px;
 export const NavLinks = styled(LinkS)`
 color: #fff;
 display: flex;
+font-size: 16px;
+font-size: clamp(1.5rem, 2vw, 4vw);
+font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans serif;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
 height: 100%;
 cursor: pointer;
 
-&.active{
+&:active{
     border-bottom: 3px solid #01bf71;
 }
 `
@@ -94,24 +100,33 @@ align-items: center;
 @media screen and (max-width: 768px) {
     display: none;
 }
-`
-
-export const NavBtnLink = styled(LinkR)`
-border-radius: 50px;
-background: #01bf71;
-white-space: nowrap;
-color: #010606;
-padding: 10px 22px;
-font-size: 16px;
-outline:none;
-border: none;
-cursor: pointer;
-transition: all 0.2s ease-in-out;
-text-decoration: none;
 
 &:hover{
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
     }
+`
+
+export const NavBtnLink = styled(LinkR)`
+border-radius: 50px;
+background: #01bf71;
+white-space: nowrap;
+padding: 10px 22px;
+color: #010606;
+font-size: clamp(1.2rem, 1vw, 2vw);
+outline:none;
+border: none;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+
+
+&:hover{
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+    }
+
+  
 `
