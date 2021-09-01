@@ -22,12 +22,21 @@ z-index: 1;
     left:0;
     right:0;
     bottom:0;
-    /* background: linear-gradient(to right, blue, pink); */
     background: linear-gradient(
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.0) 70%,
+      /* These three 'smooth' out the fade. */
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.7) 90%,
+      rgba(0, 0, 0, 0.9) 95%,
+      /* Solid to match the background. */
+      rgba(0, 0, 0, 1.0) 100%
+    );
+    /* background: linear-gradient(
         180deg, rgba(0,0,0,0.2) 0% , 
         rgba(0,0,0,0.6) 100%),
         linear-gradient (180deg, rgba(0,0,0,0.2) 0%,
-        transparent 100%);
+        transparent 100%); */
     z-index: 2;
 };
 `
@@ -79,7 +88,7 @@ text-align: center;
 export const HeroP = styled.p`
 margin-top: 24px;
 color: #fff;
-font-size: 24px;
+font-size: 22px;
 text-align: center;
 max-width: 600px;
 
