@@ -24,12 +24,10 @@ color:#fff;
 position: fixed;
 top: 5%;
 right: 4%;
-background-color: #222;
 padding: .75rem;
-display:flex;
-place-items: center;
-font-size: 2rem;
+font-size: 3rem;
 cursor: pointer;
+outline: none;
 `
 
 export const Icon = styled.div`
@@ -37,13 +35,12 @@ position: absolute;
 top: 1.2 rem;
 right: 1.5rem;
 background: transparent;
-font-size: 2 rem;
 outline: none;
 `
 
 export const SideBarWrapper = styled.div`
 color: #fff;
-position: fixed;
+/* position: fixed;
 top: 0;
 right:0;
 height: 100vh;
@@ -51,7 +48,7 @@ width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+align-items: center; */
 
 `
 export const SideBarMenu = styled.ul`
@@ -63,7 +60,7 @@ text-align: center;
 align-items: center;
 
 @media screen and (max-width: 480px){
-    grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(6, 80px);
 }
 `
 
@@ -71,9 +68,9 @@ export const SideBarLink = styled(LinkS)`
 display: flex;
 align-items: center;
 justify-content: center;
-/* font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif; */
-/* font-size: clamp(2rem, 3vw, 5vw); */
-font-size: 16px;
+font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+font-size: clamp(2rem, 3vw, 5vw);
+/* font-size: 16px; */
 text-decoration: nones;
 list-style: none;
 transition: 0.2s ease-in-out;

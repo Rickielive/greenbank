@@ -3,9 +3,9 @@ import {Link as LinkR} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
 
 export const Nav = styled.nav`
-background: #000;
+background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent' )};
 height: 80px;
-// margin-top: -80px;
+margin-top: -80px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -13,7 +13,7 @@ font-size: 1rem;
 position: sticky;
 top: 0;
 z-index: 10;
-margin: 0px;
+transition: 0.8s all ease;
 //margin: 0;
 /* width: auto;
 margin-top: 0; */
@@ -34,10 +34,10 @@ max-width: 1100px;
 `;
 
 export const NavLogo = styled(LinkR)`
-color: #fff;
+color: #01bf71;
 justify-self: flex-start;
 cursor: pointer;
-font-size: clamp(2rem, 3vw, 5vw);
+font-size: clamp(1.5rem, 3vw, 5vw);
 display: flex;
 align-items: center;
 margin-left: 24px;
@@ -66,8 +66,7 @@ list-style: none;
 text-align: center;
 margin-right: -22px;
 
-/* @media screen and(max-width: 768px) {
-    display: none !important; */
+
     @media screen and (max-width: 768px) {
     display: none !important;
 }
@@ -81,7 +80,7 @@ export const NavLinks = styled(LinkS)`
 color: #fff;
 display: flex;
 font-size: 16px;
-font-size: clamp(1.5rem, 2vw, 4vw);
+font-size: clamp(1.5rem, 1vw, 3vw);
 font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans serif;
 align-items: center;
 text-decoration: none;
@@ -104,7 +103,7 @@ align-items: center;
 
 &:hover{
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    /* background: #fff; */
     color: #010606;
     }
 `
@@ -113,18 +112,21 @@ export const NavBtnLink = styled(LinkR)`
 border-radius: 50px;
 background: #01bf71;
 white-space: nowrap;
-color: #010606;
 padding: 10px 22px;
-font-size: 16px;
+color: #010606;
+font-size: clamp(1.2rem, 1vw, 2vw);
 outline:none;
 border: none;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
 
+
 &:hover{
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
-    }
+     }
+
+  
 `
