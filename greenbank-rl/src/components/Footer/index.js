@@ -51,7 +51,7 @@ const Footer  = () => {
                         <SocialLogo to='/' onClick = {toggleHome}>
                             Greenbank
                         </SocialLogo>
-                        <WebsiteRights> Greenbank {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                        <WebsiteRights> Greenbank © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         <SocialIcons>
 
                             <SocialIconLink href= "/" target="_blank" aria-label="Facebook">
