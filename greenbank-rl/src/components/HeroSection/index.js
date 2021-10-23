@@ -17,13 +17,14 @@ const HeroSection = () => {
             </HeroBG>
             <HeroContent>
             {/* Virtual Banking Made Easy */}
-                <HeroH1>Virtual Banking Made Easy</HeroH1>
+                <HeroH1>Banking & Budgeting made Simple</HeroH1>
                 <HeroP>
                     {/* Sign up for a new account today and recieve Ksh1000 in credit 
                     towards your next payment. */}
-                    it’s easy to get into your own head when it comes to money. 
-                    the path to financial wellness starts here.
+                    {/* it’s easy to get into your own head when it comes to money. 
+                    the path to financial wellness starts here. */}
                     {/* Join an ethical bank that uses its savers' money to lend to charities and social enterprises. */}
+                    Master your money with one easy app and start your financial wellness.
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
