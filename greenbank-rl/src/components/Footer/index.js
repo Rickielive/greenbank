@@ -15,43 +15,47 @@ const Footer  = () => {
                     <FooterLinksWrapper>
                        <FooterLinksItems> 
                            <FooterLinkTitle> About us </FooterLinkTitle>
-                               <FooterLink to = "/signin"> How it works</FooterLink>
-                               <FooterLink to = "/signin"> Testimonials</FooterLink>
-                               <FooterLink to = "/signin"> Careers</FooterLink>
-                               <FooterLink to = "/signin"> Investors</FooterLink>
-                               <FooterLink to = "/signin"> Terms of Service</FooterLink>
+                               <FooterLink to = "/signin"> Disclosures</FooterLink>
+                               <FooterLink to = "/signin"> Accessibity</FooterLink>
+                               <FooterLink to = "/signin"> Online Privacy</FooterLink>
+                               <FooterLink to = "/signin"> Online Security</FooterLink>
+                               <FooterLink to = "/signin"> Terms of Use</FooterLink>
+                               <FooterLink to = "/signin"> Site Map</FooterLink>
                         </FooterLinksItems>
                         <FooterLinksItems> 
                            <FooterLinkTitle> Contact us </FooterLinkTitle>
-                           <FooterLink to = "/"> Contact</FooterLink>
-                           <FooterLink to = "/"> Support</FooterLink>
-                           <FooterLink to = "/"> Destination</FooterLink>
-                           <FooterLink to = "/"> SponsorShips</FooterLink>
+                           <FooterLink to = "/"> Green Bank Limited,</FooterLink>
+                           <FooterLink to = "/"> Fosse House,</FooterLink>
+                           <FooterLink to = "/"> Moi Avenue Street,</FooterLink>
+                           <FooterLink to = "/"> Nairobi</FooterLink>
+                           <FooterLink to = "/"> T:(+254) 7123456</FooterLink>
+                           <FooterLink to = "/"> E:enquiries@greenbank.org</FooterLink>
                         </FooterLinksItems> 
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                        <FooterLinksItems> 
-                           <FooterLinkTitle> Videos</FooterLinkTitle>
-                           <FooterLink to = "/"> Submit Videos </FooterLink>
-                           <FooterLink to = "/"> Ambassadors </FooterLink>
-                           <FooterLink to = "/"> Agency</FooterLink>
-                           <FooterLink to = "/"> Influencer</FooterLink>
+                           <FooterLinkTitle> Accounts</FooterLinkTitle>
+                           <FooterLink to = "/"> Checking </FooterLink>
+                           <FooterLink to = "/"> Savings </FooterLink>
+                           <FooterLink to = "/"> Investment</FooterLink>
+                           <FooterLink to = "/"> Credit Cards</FooterLink>
+                           <FooterLink to = "/"> Mortgages</FooterLink>
                         </FooterLinksItems>
                         <FooterLinksItems> 
-                           <FooterLinkTitle> Social Media </FooterLinkTitle>
-                               <FooterLink to = "/"> Instagram</FooterLink>
-                               <FooterLink to = "/"> Facebook</FooterLink>
-                               <FooterLink to = "/"> Youtube</FooterLink>
-                               <FooterLink to = "/"> Twitter</FooterLink>
+                           <FooterLinkTitle> Business</FooterLinkTitle>
+                               <FooterLink to = "/"> Business Checking</FooterLink>
+                               <FooterLink to = "/"> CDs and Savings</FooterLink>
+                               <FooterLink to = "/"> Treasury Management</FooterLink>
+                               <FooterLink to = "/"> Business Lending</FooterLink>
                         </FooterLinksItems> 
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/' onClick = {toggleHome}>
-                            Greenbank
+                            Green Bank
                         </SocialLogo>
-                        <WebsiteRights> Greenbank © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                        <WebsiteRights>  © {new Date().getFullYear()} Green Bank.N.A. All Rights Reserved. Wachira M.</WebsiteRights>
                         <SocialIcons>
 
                             <SocialIconLink href= "/" target="_blank" aria-label="Facebook">

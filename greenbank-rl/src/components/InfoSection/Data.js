@@ -25,7 +25,7 @@ export const homeObjTwo =  {
     description: ' We have you covered no matter where you are located. All you need is an internet connnection and a phone or a computer.',
     buttonLabel: 'Get started',
     imgStart: false,
-    img: require('../../images/undraw_Savings_re_eq4w.svg'),
+    img: require('../../images/undraw_Online_everywhere_re_n3lr.svg'),
     alt: 'piggybank',
     dark: false,
     primary: false,
