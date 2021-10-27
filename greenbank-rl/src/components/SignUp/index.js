@@ -1,12 +1,8 @@
 import React from 'react'
-import { SignupScreen, SignupScreenContainer, SignupScreenForm, SignupScreenFormButton, SignupScreenFormH1, SignupScreenFormH4, SignupScreenFormInput, SignupScreen__gray, SignupScreen__link} from './ProfileSectionElements'
-//import Image from '../../images/tree.jpg'
-import Video from '../../videos/video.mp4'
-import NavBar from '../NavBar'
+import { SignupScreen, SignupScreenForm, SignupScreenFormButton, SignupScreenFormH1, SignupScreenFormH4} from './SignUpElements'
 
 
-
-function ProfileSection() {
+function SignUp() {
     
 
     return (
@@ -71,4 +67,4 @@ function ProfileSection() {
     )
 }
 
-export default ProfileSection
+export default SignUp

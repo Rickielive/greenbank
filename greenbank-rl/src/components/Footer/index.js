@@ -15,12 +15,12 @@ const Footer  = () => {
                     <FooterLinksWrapper>
                        <FooterLinksItems> 
                            <FooterLinkTitle> About us </FooterLinkTitle>
-                               <FooterLink to = "/signin"> Disclosures</FooterLink>
-                               <FooterLink to = "/signin"> Accessibity</FooterLink>
-                               <FooterLink to = "/signin"> Online Privacy</FooterLink>
-                               <FooterLink to = "/signin"> Online Security</FooterLink>
-                               <FooterLink to = "/signin"> Terms of Use</FooterLink>
-                               <FooterLink to = "/signin"> Site Map</FooterLink>
+                               <FooterLink to = "/"> Disclosures</FooterLink>
+                               <FooterLink to = "/"> Accessibity</FooterLink>
+                               <FooterLink to = "/"> Online Privacy</FooterLink>
+                               <FooterLink to = "/"> Online Security</FooterLink>
+                               <FooterLink to = "/"> Terms of Use</FooterLink>
+                               <FooterLink to = "/SignUp"> Site Map</FooterLink>
                         </FooterLinksItems>
                         <FooterLinksItems> 
                            <FooterLinkTitle> Contact us </FooterLinkTitle>

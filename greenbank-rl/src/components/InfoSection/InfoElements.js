@@ -28,7 +28,7 @@ align-items: center;
 grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
 
-@media screen and (maz-width: 768px){
+@media screen and (max-width: 768px){
     grid-template-areas: ${({imgStart}) => (imgStart ? `' col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
 }
 `

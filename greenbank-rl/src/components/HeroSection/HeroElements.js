@@ -8,7 +8,7 @@ background: #0c0c0c;
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 0 30px;
+padding: 0 30px; 
 height: 700px;
 position: relative;
 z-index: 1;
@@ -50,7 +50,6 @@ left:0;
 overflow:hidden;
 width: 100%;
 height: 100%
-
 `
 
 export const VideoBG = styled.video`
